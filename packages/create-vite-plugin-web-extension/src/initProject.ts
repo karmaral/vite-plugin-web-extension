@@ -86,7 +86,7 @@ async function resolveOptions(
   }
 
   if (!selectedTemplate) {
-    const templatesUrl = `https://raw.githubusercontent.com/aklinker1/vite-plugin-web-extension/${templateBranch}/packages/create-vite-plugin-web-extension/templates/templates.json`;
+    const templatesUrl = `https://raw.githubusercontent.com/karmaral/vite-plugin-web-extension/${templateBranch}/packages/create-vite-plugin-web-extension/templates/templates.json`;
     const templates = await fetchJson<string[]>(templatesUrl).catch((err) => {
       console.error(err);
       throw Error(
